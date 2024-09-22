@@ -9,13 +9,16 @@ body {
 width: 100% ;
 height: 100% ;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 section {
     height: 100% ;
     width: 100% ;
-    background-color: bisque;
 }
+
+
+/* SECTION 1  */
 
 nav {
     display: flex;
@@ -35,16 +38,93 @@ nav > h1 > i {
 }
 nav > h1 {
     font-size: 30px ;
+    display: flex;
+    align-items: center;
+    gap: 5px ;
 }
 nav > h4 {
     font-size: 20px ;
     font-weight: 300;
 }
 .part2 button {
-    padding: 15px 30px ;
+    padding: 15px 30px;
     font-weight: 300;
     font-size: 15px ;
     border: 1px solid black ;
     background: transparent ;
     cursor: pointer ;
+}
+
+.center {
+    height: 80%;
+    width: 100% ;
+    display: flex;
+    padding: 70px 100px ;
+}
+
+.center-part1 {
+    height: 100% ;
+    width: 45% ;
+}
+.center-part1 h1 {
+    font-size: 50px ;
+}
+.center-part1 p {
+    margin-top: 40px ;
+    margin-bottom: 30px ;
+}
+.center-part1 button {
+    padding: 18px 40px ;
+    background-color: black;
+    color: white ;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none ;
+}
+
+.center-part2 {
+    height: 100% ;
+    width: 55% ;
+    position: relative;
+}
+.center-part2 img {
+    height: 100% ;
+    position: absolute;
+    right: 0 ;
+}
+
+.section1-bottom {
+    margin-top: -70px ;
+    padding: 0 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1-bottom img {
+    width: 100px ;
+}
+
+
+/* SECTION 2 */
+
+.section2 {
+
+}
+
+.services {
+    display: flex;    
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px ;
+    padding: 100px 70px ;
+}
+
+.services h3 {
+    font-size: 35px ;
+    background-color: #48B85F;
+}
+.services p {
+    max-width: 50%;
+    font-size: 18px;
 }
