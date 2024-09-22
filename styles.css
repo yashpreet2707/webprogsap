@@ -109,15 +109,13 @@ nav > h4 {
 /* SECTION 2 */
 
 .section2 {
-
 }
 
 .services {
     display: flex;    
-    justify-content: flex-start;
     align-items: center;
     gap: 40px ;
-    padding: 100px 70px ;
+    padding: 100px 70px 50px;
 }
 
 .services h3 {
@@ -127,4 +125,49 @@ nav > h4 {
 .services p {
     max-width: 50%;
     font-size: 18px;
+}
+
+.container {
+    padding: 20px 70px 10px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .element {
+    border-radius: 50px ;
+    height: 300px;
+    margin: 10px 50px 20px 0 ;
+    width: 40% ;
+    padding: 50px 30px ;
+    display: flex ;
+
+}
+.container .element .ele-p1 {
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .element .ele-p2 {
+    padding: 30px ;
+}
+.container .element .ele-p2 img {
+    height: 100%;
+}
+.container .eleLight {
+    border: 1px solid black ;
+    border-bottom: 10px solid black ;
+}
+.container .eleDark {
+    background-color: black;
+    color: white ;
+}
+
+.eleLight h2 {
+    background-color: #48B85F ;
+}
+
+.eleDark h2 {
+    background-color: white;
+    color: black ;
 }
