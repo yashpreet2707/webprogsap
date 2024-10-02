@@ -1,30 +1,33 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
 const App = () => {
 
-  const containerRef = useRef() ;
+  const randomX = gsap.utils.random(-500,500, 100) ;
+  const rotateX = gsap.utils.random(-180, 180, 30) ;
+
+  const [xValue, setxValue] = useState(0)
+  const [Roti, setRoti] = useState(0)
+
+  const boxRef = useRef() ;
 
   useGSAP(()=>{
-    gsap.from(".box", {
-      rotate: 540,
-      duration: 1.5,
-      delay: 0.5,
-      scale: 0
+    gsap.to(boxRef.current, {
+      x: xValue ,
+      rotate: Roti,
+      duration: 0.3,
     })
-  }, {scope: containerRef })
-
+  }, [xValue, Roti])
 
   return (
     <main>
-      <div className="container" ref={containerRef}>
-        <div className="circle"></div>
-        <div className="box"></div>
-      </div>
-      <div className="kuchh">
-        <div className="circle"></div>
-        <div className="box"></div>
+      <div className="container">
+        <button onClick={()=>{
+          setxValue(randomX) ;
+          setRoti(rotateX) ;
+        }}>animate</button>
+        <div className="box" ref={boxRef}></div>
       </div>
     </main>
   )

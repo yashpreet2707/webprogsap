@@ -24,22 +24,31 @@ main {
 
 .container {
   padding: 20px ;
-  border: 1px solid white ;
   border-radius: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
 
 .box {
-  height: 300px;
-  width: 300px;
-  margin: 20px ;
-  border-radius: 30px ;
-  background: linear-gradient(to right bottom, rgb(192, 70, 94), crimson) ;
-}
-
-.circle {
   height: 300px ;
   width: 300px ;
-  margin: 20px ;
-  border-radius: 100%;
-  background: linear-gradient(to right bottom, lightblue, cadetblue)
+  margin-top: 100px ;
+  border-radius: 30px;
+  background: linear-gradient(to right bottom, lightblue, rgb(72, 137, 139))
+}
+
+button {
+  width: 80% ;
+  margin: auto ;
+  padding: 20px 50px;
+  border-radius: 50px ;
+  background: linear-gradient(to right bottom, lightseagreen, seagreen);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+button:active {
+  scale: 0.9 ;
 }
